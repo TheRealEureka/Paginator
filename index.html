@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Example using Paginator</h1>
+<div id="list">
+
+</div>
+<nav aria-label="Page navigation">
+    <ul class="pagination" id="pagination">
+
+    </ul>
+</nav>
+<script type="module">
+    import {Paginator} from './paginator.js'
+
+    new Paginator('list','pagination');
+</script>
+
+<script>
+    /**
+     * Used to fill the DOM (For demo only)
+     */
+    let html ="";
+
+    for(let i = 0; i < 150 ; i++){
+        html += `<p class="hidden">Elem ${i}</p>`;
+    }
+    document.getElementById('list').innerHTML = html;
+</script>
+</body>
+</html>
