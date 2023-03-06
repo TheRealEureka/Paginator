@@ -8,7 +8,6 @@
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
     color: #fff;
-    cursor: pointer;
     background-color: #337ab7;
     border-color: #337ab7;
 }
@@ -20,6 +19,8 @@
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #ddd;
+    cursor: pointer;
+
 }
 
 .pagination{
